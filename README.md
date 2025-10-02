@@ -95,20 +95,90 @@ python main.py analyze --stock RELIANCE
 python main.py test
 ```
 
-## 📈 Dataset
+## 📈 Dataset Information
 
-Uses real NSE dataset (2022-2024) with 50+ stocks including:
-- RELIANCE, TCS, HDFCBANK, INFY, HINDUNILVR
-- ICICIBANK, KOTAKBANK, ITC, SBIN, BHARTIARTL
-- And many more...
+### **NSE Nifty 50 Dataset (2022-2024)**
+- **Source**: [Kaggle - NSE Nifty50 Index Daily & Minute Level Data](https://www.kaggle.com/datasets/tomtillo/nse-nifty50-index-daily-minute-level-data)
+- **Time Period**: January 2022 - December 2024 (3 Years)
+- **Frequency**: Daily & Minute-level OHLCV data
+- **Stocks**: 50+ NSE listed companies
+
+### **Available Stocks:**
+RELIANCE, TCS, HDFCBANK, INFY, HINDUNILVR, ICICIBANK, KOTAKBANK, ITC, SBIN, BHARTIARTL, MARUTI, BAJAJ-AUTO, TATAMOTORS, HEROMOTOCO, EICHERMOT, HCLTECH, WIPRO, TECHM, ULTRACEMCO, ASIANPAINT, GRASIM, JSWSTEEL, TATASTEEL, HINDALCO, NTPC, POWERGRID, COALINDIA, ONGC, BPCL, IOC, GAIL, ADANIENT, ADANIPORTS, APOLLOHOSP, CIPLA, DRREDDY, DIVISLAB, SUNPHARMA, NESTLEIND, BRITANNIA, TATACONSUM, TITAN, BAJFINANCE, BAJAJFINSV, SBILIFE, HDFCLIFE, LTIM, UPL, INDUSINDBK, AXISBANK
+
+### **Data Features:**
+- **OHLCV Data**: Open, High, Low, Close, Volume
+- **Technical Indicators**: 15+ indicators (RSI, MACD, Bollinger Bands, etc.)
+- **Time Series**: Sequential data for ML training
+- **Quality**: Clean, validated market data
 
 ## 🔧 Configuration
 
 All configuration is handled through dataclasses in the scripts for easy customization.
 
-## 📝 Notes
+## ⚠️ Important Notes
 
-- No API dependencies - runs directly with Python scripts
-- GPU acceleration supported for LSTM and XGBoost
-- Professional error handling and logging
-- Caching for improved performance
+### **First Time Setup:**
+1. **Dataset Required**: Download from Kaggle before running
+2. **Model Training**: Required on first run (30-60 minutes)
+3. **GPU Recommended**: For faster training (optional)
+4. **Memory**: 8GB+ RAM recommended for full dataset
+
+### **Model Training Time Estimates:**
+- **LSTM**: ~10-15 minutes per stock
+- **Random Forest**: ~2-3 minutes per stock  
+- **XGBoost**: ~3-5 minutes per stock
+- **ARIMA**: ~1-2 minutes per stock
+- **Prophet**: ~2-3 minutes per stock
+- **Transformer**: ~15-20 minutes per stock
+
+## 🚀 Deployment
+
+### **Free Deployment Options:**
+1. **Frontend**: Deploy to Vercel/Netlify (free)
+2. **Backend**: Deploy to Railway/Render (free tier)
+3. **Models**: Train on deployment or use lightweight versions
+
+### **Production Setup:**
+```bash
+# For production deployment
+pip install gunicorn
+gunicorn api_server:app --host 0.0.0.0 --port $PORT
+```
+
+## 🛠️ Troubleshooting
+
+### **Common Issues:**
+
+**1. Dataset Not Found**
+```bash
+# Make sure dataset is in correct location
+data/raw/dataset/2022/day/*.csv
+data/raw/dataset/2022/minute/*.csv
+```
+
+**2. Models Not Trained**
+```bash
+# Train models first
+python main.py train
+```
+
+**3. Memory Issues**
+```bash
+# Train fewer stocks at once
+python main.py train --stocks RELIANCE TCS --models lstm random_forest
+```
+
+**4. GPU Issues**
+```bash
+# Install CPU-only PyTorch if GPU issues
+pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cpu
+```
+
+## 📝 Additional Notes
+
+- **No External APIs**: Runs completely offline after dataset download
+- **GPU Acceleration**: Supported for LSTM and Transformer models
+- **Professional Logging**: Comprehensive error handling and monitoring
+- **Caching**: Intelligent caching for improved performance
+- **Scalable**: Easy to add new models and features
