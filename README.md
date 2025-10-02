@@ -2,6 +2,51 @@
 
 A professional machine learning system for predicting Indian stock prices using multiple algorithms and technical analysis.
 
+## 📸 Project Screenshots
+
+### 🎯 Main Dashboard
+![Main Dashboard](images/dashboard-overview.png)
+*Complete overview with stock selection, predictions, and real-time analytics*
+
+### 📊 Prediction Results
+![Prediction Results](images/prediction-results.png)
+*AI predictions from 6 different models with confidence scores and forecasts*
+
+### 📈 Advanced Charts
+![Advanced Charts](images/advanced-charts.png)
+*Interactive candlestick charts with technical indicators and trading signals*
+
+### 🔍 Technical Analysis
+![Technical Analysis](images/technical-analysis.png)
+*Comprehensive technical analysis with RSI, MACD, Bollinger Bands, and more*
+
+### 📰 Sentiment Analysis
+![Sentiment Analysis](images/sentiment-analysis.png)
+*Real-time news sentiment analysis affecting stock prices*
+
+### 💼 Portfolio Dashboard
+![Portfolio Dashboard](images/portfolio-dashboard.png)
+*Portfolio optimization and risk assessment tools*
+
+---
+
+## 🌟 Live Demo
+
+> **Note:** Screenshots coming soon! Run the application locally to see it in action.
+
+### 🎮 **Try It Yourself:**
+1. Follow the [Quick Start](#-quick-start) guide
+2. Download the dataset from Kaggle
+3. Train the models (30-60 minutes)
+4. Explore all features in the web interface
+
+### 🎯 **What You'll Experience:**
+- 🔮 **AI Predictions** from 6 different models
+- 📊 **Interactive Charts** with technical indicators  
+- 📰 **News Sentiment** impact analysis
+- 💼 **Portfolio Optimization** tools
+- 📱 **Responsive Design** on any device
+
 ## 👨‍💻 Developer
 
 **Himanshu Salunke** - Data Science & AI Enthusiast  
@@ -46,20 +91,63 @@ python main.py analyze  # Stock analysis
 python main.py test     # Model testing
 ```
 
-## 📊 Features
+## 🚀 Key Features
 
-- **LSTM Neural Networks** - Deep learning for time series
-- **Random Forest** - Ensemble learning
-- **XGBoost** - Gradient boosting
-- **ARIMA** - Statistical forecasting
-- **Prophet** - Facebook's forecasting tool
-- **Transformer** - Attention-based neural networks
+### 🤖 **AI/ML Models**
+| Model | Type | Strength |
+|-------|------|----------|
+| 🧠 **LSTM** | Deep Learning | Sequential pattern recognition |
+| 🌳 **Random Forest** | Ensemble | Robust predictions |
+| ⚡ **XGBoost** | Gradient Boosting | High performance |
+| 📈 **ARIMA** | Statistical | Time series analysis |
+| 🔮 **Prophet** | Facebook AI | Trend decomposition |
+| 🎯 **Transformer** | Attention-based | Complex relationships |
+
+### 📊 **Analytics Dashboard**
+- 📈 **Interactive Charts** - Candlestick, volume, technical indicators
+- 🎯 **Real-time Predictions** - Multi-model ensemble forecasting
+- 📰 **Sentiment Analysis** - News impact on stock prices
+- 💼 **Portfolio Optimization** - Risk assessment and allocation
+- 🔍 **Technical Analysis** - 15+ indicators (RSI, MACD, Bollinger Bands)
+- 📱 **Responsive Design** - Works on desktop, tablet, and mobile
+
+### ⚡ **Performance Features**
+- 🚀 **Fast Training** - Optimized algorithms
+- 💾 **Smart Caching** - Reduced computation time
+- 🎨 **Modern UI** - Material Design components
+- 📊 **Real-time Updates** - Live data processing
+- 🔒 **Error Handling** - Robust error management
 
 ## 🛠️ Tech Stack
 
-- **Python 3.10** + **PyTorch** + **scikit-learn**
-- **pandas** + **numpy** + **matplotlib**
-- **statsmodels** + **prophet** + **ta-lib**
+### **Backend**
+- 🐍 **Python 3.10** - Core language
+- 🔥 **PyTorch** - Deep learning framework
+- 🤖 **scikit-learn** - Machine learning library
+- 📊 **pandas** - Data manipulation
+- 🔢 **numpy** - Numerical computing
+- 📈 **matplotlib/seaborn** - Data visualization
+- 📉 **statsmodels** - Statistical analysis
+- 🔮 **Prophet** - Time series forecasting
+- 📊 **TA-Lib** - Technical analysis
+- ⚡ **FastAPI** - Modern web framework
+- 🚀 **uvicorn** - ASGI server
+
+### **Frontend**
+- ⚛️ **React 18** - UI framework
+- 📘 **TypeScript** - Type safety
+- 🎨 **Material-UI** - Component library
+- 📊 **Recharts** - Chart library
+- 🎮 **Three.js** - 3D visualization
+- ⚡ **Vite** - Build tool
+- 🎯 **Axios** - HTTP client
+
+### **Data & ML**
+- 📈 **NSE Dataset** - Indian stock market data
+- 🧠 **6 ML Models** - Ensemble predictions
+- 📊 **15+ Indicators** - Technical analysis
+- 📰 **News API** - Sentiment analysis
+- 💼 **Portfolio Tools** - Risk assessment
 
 ## 📁 Project Structure
 
