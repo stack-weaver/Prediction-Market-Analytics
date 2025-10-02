@@ -5,27 +5,27 @@ A comprehensive full-stack machine learning platform that combines **6 advanced 
 ## 📸 Project Screenshots
 
 ### 🎯 Main Dashboard
-![Main Dashboard](images/dashboard-overview.png)
+![Main Dashboard](images/dashboard-overview.png?v=2)
 *Complete overview with stock selection, predictions, and real-time analytics*
 
 ### 📊 Prediction Results
-![Prediction Results](images/prediction-results.png)
+![Prediction Results](images/prediction-results.png?v=2)
 *AI predictions from 6 different models with confidence scores and forecasts*
 
 ### 📈 Advanced Charts
-![Advanced Charts](images/advanced-charts.png)
+![Advanced Charts](images/advanced-charts.png?v=2)
 *Interactive candlestick charts with technical indicators and trading signals*
 
 ### 🔍 Technical Analysis
-![Technical Analysis](images/technical-analysis.png)
+![Technical Analysis](images/technical-analysis.png?v=2)
 *Comprehensive technical analysis with RSI, MACD, Bollinger Bands, and more*
 
 ### 📰 Sentiment Analysis
-![Sentiment Analysis](images/sentiment-analysis.png)
-*Real-time news sentiment analysis affecting stock prices*
+![Sentiment Analysis](images/sentiment-analysis.png?v=2)
+*AI-powered sentiment analysis from financial news sources*
 
 ### 💼 Portfolio Dashboard
-![Portfolio Dashboard](images/portfolio-dashboard.png)
+![Portfolio Dashboard](images/portfolio-dashboard.png?v=2)
 *Portfolio optimization and risk assessment tools*
 
 ---
