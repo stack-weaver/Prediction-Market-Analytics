@@ -1,0 +1,27 @@
+{
+  "name": "intellistock-pro",
+  "version": "1.0.0",
+  "description": "IntelliStock Pro: AI-Powered Stock Prediction & Analytics Platform",
+  "scripts": {
+    "dev": "concurrently \"npm run backend\" \"npm run frontend\"",
+    "start": "npm run dev",
+    "backend": "python api_server.py",
+    "frontend": "cd frontend && npm run dev",
+    "frontend:build": "cd frontend && npm run build",
+    "frontend:preview": "cd frontend && npm run preview",
+    "install-all": "npm install && npm run install-frontend",
+    "install-frontend": "cd frontend && npm install",
+    "build": "cd frontend && npm run build",
+    "preview": "cd frontend && npm run preview",
+    "lint": "cd frontend && npm run lint",
+    "cleanup": "scripts\\cleanup.bat",
+    "clean": "npm run cleanup"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "cross-env": "^7.0.3"
+  },
+  "keywords": ["stock", "prediction", "machine-learning", "react", "fastapi", "ai", "analytics", "intellistock"],
+  "author": "Himanshu Salunke <contact.himanshusalunke@gmail.com> (https://github.com/HimanshuSalunke)",
+  "license": "MIT"
+}

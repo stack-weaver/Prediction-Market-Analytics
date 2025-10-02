@@ -1,0 +1,721 @@
+{
+    "start_time": "2025-10-02T15:12:15.536552",
+    "training_years": [
+        "2022",
+        "2023",
+        "2024"
+    ],
+    "config": {
+        "TARGET_COLUMN": "close",
+        "TRAIN_SPLIT_RATIO": 0.8,
+        "MIN_DATASET_SIZE": 100,
+        "MODEL_SAVE_DIR": "data\\models",
+        "LOOKBACK_DAYS": 60,
+        "LSTM_EPOCHS": 50,
+        "LSTM_BATCH_SIZE": 32,
+        "LSTM_LR": 0.001
+    },
+    "results_by_stock": {
+        "ADANIENT": {
+            "lstm": {
+                "status": "success",
+                "r2": -5.186500942969276
+            },
+            "random_forest": {
+                "status": "success",
+                "r2": 0.9788416308123706
+            },
+            "xgboost": {
+                "status": "success",
+                "r2": 0.9757716991161692
+            }
+        },
+        "ADANIPORTS": {
+            "lstm": {
+                "status": "success",
+                "r2": -9.828665151352844
+            },
+            "random_forest": {
+                "status": "success",
+                "r2": 0.25467441758319354
+            },
+            "xgboost": {
+                "status": "success",
+                "r2": 0.2317454459676671
+            }
+        },
+        "APOLLOHOSP": {
+            "lstm": {
+                "status": "success",
+                "r2": -6.202640234976928
+            },
+            "random_forest": {
+                "status": "success",
+                "r2": -0.39654237799764047
+            },
+            "xgboost": {
+                "status": "success",
+                "r2": -0.4780554040365548
+            }
+        },
+        "ASIANPAINT": {
+            "lstm": {
+                "status": "success",
+                "r2": 0.37371581972713963
+            },
+            "random_forest": {
+                "status": "success",
+                "r2": 0.9834811269446814
+            },
+            "xgboost": {
+                "status": "success",
+                "r2": 0.9813103976783496
+            }
+        },
+        "AXISBANK": {
+            "lstm": {
+                "status": "success",
+                "r2": -45.42495533707169
+            },
+            "random_forest": {
+                "status": "success",
+                "r2": -0.3619971307594865
+            },
+            "xgboost": {
+                "status": "success",
+                "r2": -0.32545017020885214
+            }
+        },
+        "BAJAJ-AUTO": {
+            "lstm": {
+                "status": "success",
+                "r2": -16.013743662186382
+            },
+            "random_forest": {
+                "status": "success",
+                "r2": -1.338045547016808
+            },
+            "xgboost": {
+                "status": "success",
+                "r2": -1.3098192109025115
+            }
+        },
+        "BAJAJFINSV": {
+            "lstm": {
+                "status": "success",
+                "r2": 0.3701559721210027
+            },
+            "random_forest": {
+                "status": "success",
+                "r2": 0.9537599317259773
+            },
+            "xgboost": {
+                "status": "success",
+                "r2": 0.9250655343674701
+            }
+        },
+        "BAJFINANCE": {
+            "lstm": {
+                "status": "success",
+                "r2": -0.7149493275174943
+            },
+            "random_forest": {
+                "status": "success",
+                "r2": 0.9501227393093451
+            },
+            "xgboost": {
+                "status": "success",
+                "r2": 0.8986850538904961
+            }
+        },
+        "BHARTIARTL": {
+            "lstm": {
+                "status": "success",
+                "r2": -7.444752397879654
+            },
+            "random_forest": {
+                "status": "success",
+                "r2": -1.203920197662089
+            },
+            "xgboost": {
+                "status": "success",
+                "r2": -0.9892623334480246
+            }
+        },
+        "BPCL": {
+            "lstm": {
+                "status": "success",
+                "r2": -5.582387322553793
+            },
+            "random_forest": {
+                "status": "success",
+                "r2": -0.25920407536920553
+            },
+            "xgboost": {
+                "status": "success",
+                "r2": -0.3254428370807869
+            }
+        },
+        "BRITANNIA": {
+            "lstm": {
+                "status": "success",
+                "r2": -0.48752784907631486
+            },
+            "random_forest": {
+                "status": "success",
+                "r2": 0.9506706714791782
+            },
+            "xgboost": {
+                "status": "success",
+                "r2": 0.9512737944347539
+            }
+        },
+        "CIPLA": {
+            "lstm": {
+                "status": "success",
+                "r2": -8.596515401812704
+            },
+            "random_forest": {
+                "status": "success",
+                "r2": 0.19760622227291125
+            },
+            "xgboost": {
+                "status": "success",
+                "r2": 0.14292755145314084
+            }
+        },
+        "COALINDIA": {
+            "lstm": {
+                "status": "success",
+                "r2": -18.50785696533855
+            },
+            "random_forest": {
+                "status": "success",
+                "r2": -2.4042458331103367
+            },
+            "xgboost": {
+                "status": "success",
+                "r2": -2.6536288433621973
+            }
+        },
+        "DIVISLAB": {
+            "lstm": {
+                "status": "success",
+                "r2": -0.5932625032113494
+            },
+            "random_forest": {
+                "status": "success",
+                "r2": 0.9614784940309896
+            },
+            "xgboost": {
+                "status": "success",
+                "r2": 0.9502798729966131
+            }
+        },
+        "DRREDDY": {
+            "lstm": {
+                "status": "success",
+                "r2": -0.842631470848964
+            },
+            "random_forest": {
+                "status": "success",
+                "r2": 0.6880942191824101
+            },
+            "xgboost": {
+                "status": "success",
+                "r2": 0.6480448252290028
+            }
+        },
+        "EICHERMOT": {
+            "lstm": {
+                "status": "success",
+                "r2": -22.0086112834698
+            },
+            "random_forest": {
+                "status": "success",
+                "r2": 0.7250127585189063
+            },
+            "xgboost": {
+                "status": "success",
+                "r2": 0.7965507796222796
+            }
+        },
+        "GRASIM": {
+            "lstm": {
+                "status": "success",
+                "r2": -16.14806184762065
+            },
+            "random_forest": {
+                "status": "success",
+                "r2": -0.628153733331865
+            },
+            "xgboost": {
+                "status": "success",
+                "r2": -0.6371682941123167
+            }
+        },
+        "HCLTECH": {
+            "lstm": {
+                "status": "success",
+                "r2": -15.766768098300151
+            },
+            "random_forest": {
+                "status": "success",
+                "r2": -0.14095451675179138
+            },
+            "xgboost": {
+                "status": "success",
+                "r2": -0.13028561530940475
+            }
+        },
+        "HDFCBANK": {
+            "lstm": {
+                "status": "success",
+                "r2": -0.42349676568300887
+            },
+            "random_forest": {
+                "status": "success",
+                "r2": 0.9882428967825585
+            },
+            "xgboost": {
+                "status": "success",
+                "r2": 0.9886546724799347
+            }
+        },
+        "HDFCLIFE": {
+            "lstm": {
+                "status": "success",
+                "r2": 0.30926702217393576
+            },
+            "random_forest": {
+                "status": "success",
+                "r2": 0.9530631149813218
+            },
+            "xgboost": {
+                "status": "success",
+                "r2": 0.938743852514612
+            }
+        },
+        "HEROMOTOCO": {
+            "lstm": {
+                "status": "success",
+                "r2": -18.242190280756724
+            },
+            "random_forest": {
+                "status": "success",
+                "r2": -0.978927058371339
+            },
+            "xgboost": {
+                "status": "success",
+                "r2": -1.0379082620745819
+            }
+        },
+        "HINDALCO": {
+            "lstm": {
+                "status": "success",
+                "r2": -1.126338499924593
+            },
+            "random_forest": {
+                "status": "success",
+                "r2": 0.9818550633537547
+            },
+            "xgboost": {
+                "status": "success",
+                "r2": 0.9667287663328878
+            }
+        },
+        "HINDUNILVR": {
+            "lstm": {
+                "status": "success",
+                "r2": 0.295873626288616
+            },
+            "random_forest": {
+                "status": "success",
+                "r2": 0.9564953850667879
+            },
+            "xgboost": {
+                "status": "success",
+                "r2": 0.9513836642898219
+            }
+        },
+        "ICICIBANK": {
+            "lstm": {
+                "status": "success",
+                "r2": -63.14305232022184
+            },
+            "random_forest": {
+                "status": "success",
+                "r2": 0.7639934515227758
+            },
+            "xgboost": {
+                "status": "success",
+                "r2": 0.7760883309637983
+            }
+        },
+        "INDUSINDBK": {
+            "lstm": {
+                "status": "success",
+                "r2": -2.1128455144923537
+            },
+            "random_forest": {
+                "status": "success",
+                "r2": -0.6366953774676765
+            },
+            "xgboost": {
+                "status": "success",
+                "r2": -0.7369487529607439
+            }
+        },
+        "INFY": {
+            "lstm": {
+                "status": "success",
+                "r2": -5.038008393870163
+            },
+            "random_forest": {
+                "status": "success",
+                "r2": 0.9887602778041373
+            },
+            "xgboost": {
+                "status": "success",
+                "r2": 0.98605851894504
+            }
+        },
+        "ITC": {
+            "lstm": {
+                "status": "success",
+                "r2": -0.9436377557696749
+            },
+            "random_forest": {
+                "status": "success",
+                "r2": 0.9402600826322831
+            },
+            "xgboost": {
+                "status": "success",
+                "r2": 0.9288660823811484
+            }
+        },
+        "JSWSTEEL": {
+            "lstm": {
+                "status": "success",
+                "r2": -10.597998794403752
+            },
+            "random_forest": {
+                "status": "success",
+                "r2": 0.8061968975139457
+            },
+            "xgboost": {
+                "status": "success",
+                "r2": 0.7745019086957045
+            }
+        },
+        "KOTAKBANK": {
+            "lstm": {
+                "status": "success",
+                "r2": -2.8301509985806055
+            },
+            "random_forest": {
+                "status": "success",
+                "r2": 0.9681102836258149
+            },
+            "xgboost": {
+                "status": "success",
+                "r2": 0.9677198595541802
+            }
+        },
+        "LT": {
+            "lstm": {
+                "status": "success",
+                "r2": -0.355061138309954
+            },
+            "random_forest": {
+                "status": "success",
+                "r2": 0.9686082008897877
+            },
+            "xgboost": {
+                "status": "success",
+                "r2": 0.9703362911291015
+            }
+        },
+        "LTIM": {
+            "lstm": {
+                "status": "success",
+                "r2": -1.0503870656176328
+            },
+            "random_forest": {
+                "status": "success",
+                "r2": 0.9785378327285071
+            },
+            "xgboost": {
+                "status": "success",
+                "r2": 0.9724905136518167
+            }
+        },
+        "MARUTI": {
+            "lstm": {
+                "status": "success",
+                "r2": -0.5947198721874871
+            },
+            "random_forest": {
+                "status": "success",
+                "r2": 0.40112286173613765
+            },
+            "xgboost": {
+                "status": "success",
+                "r2": 0.40257461707958087
+            }
+        },
+        "MM": {
+            "lstm": {
+                "status": "success",
+                "r2": -5.58947525917979
+            },
+            "random_forest": {
+                "status": "success",
+                "r2": 0.3806383057323378
+            },
+            "xgboost": {
+                "status": "success",
+                "r2": 0.45565997479614817
+            }
+        },
+        "NESTLEIND": {
+            "lstm": {
+                "status": "success",
+                "r2": -7.465797588389677
+            },
+            "random_forest": {
+                "status": "success",
+                "r2": -2.1457128218385715
+            },
+            "xgboost": {
+                "status": "success",
+                "r2": -2.4370704609711513
+            }
+        },
+        "NTPC": {
+            "lstm": {
+                "status": "success",
+                "r2": -25.95122404319584
+            },
+            "random_forest": {
+                "status": "success",
+                "r2": -1.175026475858716
+            },
+            "xgboost": {
+                "status": "success",
+                "r2": -1.1692910416057303
+            }
+        },
+        "ONGC": {
+            "lstm": {
+                "status": "success",
+                "r2": -5.961854891617904
+            },
+            "random_forest": {
+                "status": "success",
+                "r2": -0.8015747950758136
+            },
+            "xgboost": {
+                "status": "success",
+                "r2": -1.2396818175523303
+            }
+        },
+        "POWERGRID": {
+            "lstm": {
+                "status": "success",
+                "r2": -13.010022726065895
+            },
+            "random_forest": {
+                "status": "success",
+                "r2": -1.0698555581115414
+            },
+            "xgboost": {
+                "status": "success",
+                "r2": -0.9489815606374015
+            }
+        },
+        "RELIANCE": {
+            "lstm": {
+                "status": "success",
+                "r2": -2.863382422706396
+            },
+            "random_forest": {
+                "status": "success",
+                "r2": 0.7873571296167012
+            },
+            "xgboost": {
+                "status": "success",
+                "r2": 0.7945128872559256
+            }
+        },
+        "SBILIFE": {
+            "lstm": {
+                "status": "success",
+                "r2": -9.047286773829907
+            },
+            "random_forest": {
+                "status": "success",
+                "r2": -0.0293100050198305
+            },
+            "xgboost": {
+                "status": "success",
+                "r2": 0.0258350375235471
+            }
+        },
+        "SBIN": {
+            "lstm": {
+                "status": "success",
+                "r2": -1.417770794076541
+            },
+            "random_forest": {
+                "status": "success",
+                "r2": 0.3472672568243257
+            },
+            "xgboost": {
+                "status": "success",
+                "r2": 0.3043461142039712
+            }
+        },
+        "SUNPHARMA": {
+            "lstm": {
+                "status": "success",
+                "r2": -6.11498633833133
+            },
+            "random_forest": {
+                "status": "success",
+                "r2": -0.6838141954739365
+            },
+            "xgboost": {
+                "status": "success",
+                "r2": -0.7577763901170558
+            }
+        },
+        "TATACONSUM": {
+            "lstm": {
+                "status": "success",
+                "r2": -22.391312057254424
+            },
+            "random_forest": {
+                "status": "success",
+                "r2": -1.2149220619362353
+            },
+            "xgboost": {
+                "status": "success",
+                "r2": -1.2540650382713587
+            }
+        },
+        "TATAMOTORS": {
+            "lstm": {
+                "status": "success",
+                "r2": -9.138893662075237
+            },
+            "random_forest": {
+                "status": "success",
+                "r2": -0.8861683833635865
+            },
+            "xgboost": {
+                "status": "success",
+                "r2": -0.8991028563296961
+            }
+        },
+        "TATASTEEL": {
+            "lstm": {
+                "status": "success",
+                "r2": -29.226930559344833
+            },
+            "random_forest": {
+                "status": "success",
+                "r2": 0.8490712351011462
+            },
+            "xgboost": {
+                "status": "success",
+                "r2": 0.8187405036618413
+            }
+        },
+        "TCS": {
+            "lstm": {
+                "status": "success",
+                "r2": -14.721971938118216
+            },
+            "random_forest": {
+                "status": "success",
+                "r2": 0.9331063446799753
+            },
+            "xgboost": {
+                "status": "success",
+                "r2": 0.9107378864994988
+            }
+        },
+        "TECHM": {
+            "lstm": {
+                "status": "success",
+                "r2": -16.534291466634194
+            },
+            "random_forest": {
+                "status": "success",
+                "r2": 0.967621756590736
+            },
+            "xgboost": {
+                "status": "success",
+                "r2": 0.9663006394459555
+            }
+        },
+        "TITAN": {
+            "lstm": {
+                "status": "success",
+                "r2": -97.87389149714863
+            },
+            "random_forest": {
+                "status": "success",
+                "r2": -0.9093875028287475
+            },
+            "xgboost": {
+                "status": "success",
+                "r2": -1.0593529426213064
+            }
+        },
+        "ULTRACEMCO": {
+            "lstm": {
+                "status": "success",
+                "r2": -86.40421951555284
+            },
+            "random_forest": {
+                "status": "success",
+                "r2": -0.5821952110814597
+            },
+            "xgboost": {
+                "status": "success",
+                "r2": -0.6762479177590304
+            }
+        },
+        "UPL": {
+            "lstm": {
+                "status": "success",
+                "r2": -2.845622317166892
+            },
+            "random_forest": {
+                "status": "success",
+                "r2": -0.06752180914685324
+            },
+            "xgboost": {
+                "status": "success",
+                "r2": -0.1055037526675815
+            }
+        },
+        "WIPRO": {
+            "lstm": {
+                "status": "success",
+                "r2": -1.8533347991321412
+            },
+            "random_forest": {
+                "status": "success",
+                "r2": 0.9821492782730346
+            },
+            "xgboost": {
+                "status": "success",
+                "r2": 0.9764500233643996
+            }
+        }
+    },
+    "end_time": "2025-10-02T15:18:35.616980"
+}
