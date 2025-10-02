@@ -32,8 +32,6 @@ A professional machine learning system for predicting Indian stock prices using 
 
 ## 🌟 Live Demo
 
-> **Note:** Screenshots coming soon! Run the application locally to see it in action.
-
 ### 🎮 **Try It Yourself:**
 1. Follow the [Quick Start](#-quick-start) guide
 2. Download the dataset from Kaggle
